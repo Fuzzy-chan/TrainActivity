@@ -9,59 +9,63 @@
 </head>
 <body>
 <div class="container">
-    
-    <div class="row">
-        <div class="col-12-md">
-         <div class="jumbotron text-center">
-            <h1 class="display-4">Train Schedule</h1>
-            <p class="lead">See below for a list of trains and their arrival time. The closest train will be shown at the top.</p>
-          </div>
+
+  
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="display-3">Train Schedule</h1>
+          <p class="lead">See below for a list of trains and their destinations. You can add your own trains and destinations as well!</p>
+        </div>
+      </div>
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="form rounded w-100">
+                <div class="formHeader">
+                        Train Information
+                        </div>
+        <table class="table">
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Frequency</th>
+                </tr>
+                <tbody id="tableInfo">
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-                <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">Train Name</th>
-                            <th scope="col">Destination</th>
-                            <th scope="col">Arrival Time</th>
-                            <th scope="col">Time Left</th>
-                          </tr>
-                        </thead>
-                        <tbody class="tableBody">
-                          
-                        </tbody>
-                      </table>
+</div>
+
+      <div class="row">
+            <div class="col-md-12">
+                    <div class="form rounded w-100">
+                        <div class="formHeader">
+                            Employee Submission
+                            </div>
+                            <div class="form-group">
+                              <label for="trainName">Train Name</label>
+                              <input type="text" class="form-control" id="trainNameInput" placeholder="Supertrain">
+                            </div>
+                            <div class="form-group">
+                              <label for="destination">Destination</label>
+                              <input type="text" class="form-control" id="trainDestinationInput" placeholder="Cleveland">
+                            </div>
+                            <div class="form-group">
+                                    <label for="initialArrival">Initial Arrival Time (Military Time)</label>
+                                    <input type="text" class="form-control" id="initialArrivalInput" placeholder="0500">
+                            </div>
+                            <div class="form-group">
+                                        <label for="frequency">Frequency (in minutes)</label>
+                                        <input type="number" class="form-control" id="frequencyInput" placeholder="10">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large submit">Submit</button>
+
+                        </div>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12-md">
-                <form>
-                        <div class="form-group">
-                          <label for="trainName">Train Name</label>
-                          <input type="text" class="form-control" id="trainNameInput" aria-describedby="emailHelp" placeholder="Enter Train Name">
-                        </div>
-                        <div class="form-group">
-                          <label for="trainDestination">Destination</label>
-                          <input type="text" class="form-control" id="trainDestinationInput" placeholder="Anywhere but here">
-                        </div>
-                        <div class="form-group">
-                                <label for="initialArrivalTime">Initial Arrival Time</label>
-                                <input type="number" class="form-control" id="initialArrivalTimeInput" placeholder="Military time i.e.:0500">
-                        </div>
-                        <div class="form-group">
-                                <label for="frequency">Frequency of Trip</label>
-                                <input type="number" class="form-control" id="frequencyInput" placeholder="In minutes i.e.: 30">
-                        </div>
-                        <button type="submit" class="btn btn-primary submit">Submit</button>
-                      </form>
-        </div>
-    </div>
-
-
-    
 </div>
 
 
